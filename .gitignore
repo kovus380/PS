@@ -358,3 +358,7 @@ MigrationBackup/
 *.sln
 
 venv/
+
+.idea/
+
+main.py
