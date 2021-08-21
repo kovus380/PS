@@ -9,5 +9,5 @@ def lcm(a: int, b: int) -> int :
 T = int(input())
 for _ in range(T):
     A, B = map(int, input().split())
-    print(lcm(min(A, B), max(A, B)))
+    print(lcm(A, B))
 
