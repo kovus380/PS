@@ -5,10 +5,11 @@ def fill_star(size, x, y):
         stars[y][x] = '*'
     else:
         next_size = size // 3
+        print("=" * 20)
         for dy in range(3):
             for dx in range(3):
-                if dy != 1 or dx != 1:
-                    print(x, y, next_size, x + dx * next_size, y + dy * next_size)
+                if not (dy == 1 and dx == 1):
+                    print(next_size, x + dx * next_size, y + dy * next_size)
                     fill_star(next_size, x + dx * next_size, y + dy * next_size)
 
 
