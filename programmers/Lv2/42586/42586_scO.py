@@ -1,4 +1,4 @@
-# 기능개발
+# 42586 | 기능개발
 # https://programmers.co.kr/learn/courses/30/lessons/42586?language=python3
 def solution(progresses, speeds):
     work_days = [(100 - progress) // speed + ((100 - progress) % speed != 0) for progress, speed in zip(progresses, speeds)]
